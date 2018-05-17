@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="更新数据"/>
+
+  <!--下面的自定义ViewGroup必须添加两个孩子，固定的-->
+    <com.docwei.rollingnewdemo.newsrolling.ViewRollingNews
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <com.docwei.rollingnewdemo.newsrolling.ViewRollingChildView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#aabbcc"/>
+
+        <com.docwei.rollingnewdemo.newsrolling.ViewRollingChildView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#abcabc"/>
+    </com.docwei.rollingnewdemo.newsrolling.ViewRollingNews>
+</LinearLayout>
