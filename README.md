@@ -6,7 +6,7 @@
 
 <br>2.未使用属性动画，避免了属性动画会因为开发者选项关闭动画后不再起作用</br>
 
-<br>使用Scoller的startScroll平滑滚动 + 子控件的setY()复位 操作实现<br>
+<br>使用Scroller的startScroll平滑滚动 + 子控件的setY()复位 操作实现<br>
 
 demo使用多个fragment切换测试的，非单个activity测试
 
